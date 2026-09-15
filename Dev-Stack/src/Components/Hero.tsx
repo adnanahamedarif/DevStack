@@ -16,8 +16,8 @@ const Hero = () => {
 
                 <div className='mt-8 flex  items-center gap-4'>
 
-                    <button className="rounded-xl bg-linear-to-r from-orange-500 via-pink-500 to-violet-500 px-6 py-3 font-semibold text-white">Explore Technologies</button>
-                    <button className='rounded-xl border border-slate-200 bg-white px-6 py-3 text-sm font-semibold text-slate-700 '>Learn More</button>
+                    <button className="rounded-xl bg-linear-to-r from-orange-500 via-pink-500 to-violet-500 px-6 py-3 font-semibold text-white cursor-pointer">Explore Technologies</button>
+                    <button className='rounded-xl border border-slate-200 bg-white px-6 py-3 text-sm font-semibold text-slate-700 cursor-pointer '>Learn More</button>
 
                 </div>
 
