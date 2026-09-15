@@ -7,6 +7,7 @@ import Nav from './Components/Nav.tsx'
 import type { Itechnology } from './Type/techType.tsx'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from './Components/Footer.tsx'
 
 const technologyFetch =async ():Promise<Itechnology[]>=>{
   const res =await fetch('/data.json');
@@ -40,6 +41,8 @@ function App() {
         pauseOnHover
         theme="light"
       />
+
+      <Footer/>
     </>
   )
 }
