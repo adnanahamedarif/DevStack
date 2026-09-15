@@ -5,6 +5,8 @@ import Hero from './Components/Hero.tsx'
 import './Components/Nav.tsx'
 import Nav from './Components/Nav.tsx'
 import type { Itechnology } from './Type/techType.tsx'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const technologyFetch =async ():Promise<Itechnology[]>=>{
   const res =await fetch('/data.json');
@@ -26,6 +28,18 @@ function App() {
            <Catalog technologyPromise={technologyPromise}/>
 
      </Suspense>
+     <ToastContainer 
+        position="bottom-right" 
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </>
   )
 }
