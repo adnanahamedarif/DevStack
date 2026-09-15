@@ -4,7 +4,7 @@ import Logo from '../assets/logo-text.png'
 
 const Nav = () => {
     return (
-        <nav className='fixed top-0 left-0 w-full z-50 bg-white'>
+        <nav className='sticky top-0 left-0 w-full z-50 bg-white'>
             <div className='flex justify-between container mx-auto py-2 px-4 items-center'>
                 <img src={Logo} alt="Logo" />            
                 <ul className='flex gap-4 items-center cursor-pointer'>
